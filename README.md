@@ -1,6 +1,6 @@
 #ORO24FACILITIES
 
-A modern, performant, and secure web application built with React and Vite, featuring a clean UI, optimized performance, and robust state management.
+A modern, performance and secure web application built with React and Vite, featuring a clean UI, optimized performance, and robust state management.
 
 🌟 Tech Stack
 
@@ -8,7 +8,7 @@ A modern, performant, and secure web application built with React and Vite, feat
 - **State Management & API Fetching:** Redux Toolkit + RTK Query
 - **Routing:** React Router v7 with Public & Private routes
 - **Authentication:** Secure token-based authentication
-- **UI & Design:** Reusable components, Skeleton UI for loading states, Avenir Next - Cold font as per design, Added Toast for the alert as well.
+- **UI & Design:** Shadecn, Reusable components, Skeleton UI for loading states, Avenir Next - Cold font as per design, Added Toast for the alert as well.
 - **Performance Optimization:** Lazy loading, dynamic imports, optimized bundle size
 - **Style:** Tailwind CSS
 
