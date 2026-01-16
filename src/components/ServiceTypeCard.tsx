@@ -29,7 +29,7 @@ const ServiceTypeCard = ({ onSelect, data, totalPage, pageNumber, setPageNumber 
               ${isSelected ? "bg-primary-yellow/20 " : "border-gray-200"}
             `}
             >
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 p-4 sm:p-5 md:p-7 w-full">
+              <div className="flex flex-col  xl:flex-row gap-3 sm:gap-4 md:gap-6 p-4 sm:p-5 md:p-7 w-full">
                 <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 flex-1">
                   <div className="h-32 sm:h-36 md:h-40 w-full sm:w-40 md:w-48 overflow-hidden rounded-xl flex-shrink-0">
                     <img src={FallbackImage} alt={service.ServiceMasterName} className="h-full w-full object-cover" />

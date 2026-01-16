@@ -78,7 +78,7 @@ const SignIn = () => {
             />
             {formik.touched.password && formik.errors.password && <p className="text-red-500 text-xs sm:text-sm">{formik.errors.password}</p>}
 
-            <Button type="submit" disabled={isLoading} className="bg-black text-white font-bold py-2.5 sm:py-3 mt-2 sm:mt-4 w-full text-base sm:text-lg md:text-xl">
+            <Button type="submit" disabled={isLoading} className="bg-black text-white font-semibold py-2.5 sm:py-3 mt-2 sm:mt-4 w-full text-base sm:text-md md:text-lg">
               {isLoading ? <Spinner /> : "Login"}
             </Button>
             {error && <p className="text-red-500 text-xs sm:text-sm text-center">Login failed. Please try again.</p>}

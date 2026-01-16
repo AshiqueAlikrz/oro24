@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <nav className="sticky top-0 z-50 bg-primary-grey text-white font-sans">
-      <div className="mx-auto flex w-11/12 max-w-7xl items-center justify-between py-4 md:py-6">
+      <div className="mx-auto flex w-11/12 max-w-7xl items-center justify-between py-4 md:py-6  lg:px-16 px-0">
         <img src={CompanyLogo} alt="ORO24 Logo" className="w-20 md:w-24 h-auto" />
 
         <div className="hidden md:flex items-center space-x-6 lg:space-x-10 text-xs md:text-sm font-medium">

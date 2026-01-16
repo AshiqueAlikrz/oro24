@@ -64,4 +64,4 @@ export const serviceApi = createApi({
   }),
 });
 
-export const { useGetAllServicesQuery, useGetServicesByCategoryQuery, useGetServiceDetailsQuery } = serviceApi;
+export const { useGetAllServicesQuery, useGetServicesByCategoryQuery } = serviceApi;

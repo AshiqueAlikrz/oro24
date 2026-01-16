@@ -4,7 +4,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import AEDSymbol from "@/assets/svg/aedSymbol.svg";
 import { FallbackImage } from "@/assets/images";
 
-const ServiceDetails = ({ data }: any) => {
+const ServiceDetails = () => {
   const service = {
     title: "Premium Deep Cleaning",
     price: 329.99,
