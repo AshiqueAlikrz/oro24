@@ -9,7 +9,7 @@ A modern, performant, and secure web application built with React and Vite, feat
 - **State Management & API Fetching:** Redux Toolkit + RTK Query  
 - **Routing:** React Router v7 with Public & Private routes  
 - **Authentication:** Secure token-based authentication  
-- **UI & Design:** Reusable components, Skeleton UI for loading states, Avenir Next - Cold font as per design  
+- **UI & Design:** Reusable components, Skeleton UI for loading states, Avenir Next - Cold font as per design, Added Toast for the alert as well.
 - **Performance Optimization:** Lazy loading, dynamic imports, optimized bundle size  
 - **Style:** Tailwind CSS  
 
@@ -24,7 +24,7 @@ A modern, performant, and secure web application built with React and Vite, feat
 - **Reusable Components:** Modular, maintainable, and scalable codebase.  
 - **Global State Management:** RTK Query for fetching APIs and Redux Toolkit for managing state efficiently.  
 - **Responsive Layouts:** Layout system ensures consistency across pages and devices.  
-- **User Country Flag :*User show their country flag while login to the their account* .  
+- **User Country Flag:** User show their country flag while login to the their account* .  
 
 ---
 
