@@ -106,7 +106,6 @@
 }
 
 @layer base {
-  /* Only apply these default styles when Tailwind classes are not present */
   a:not([class]) {
     font-weight: 500;
     color: #646cff;

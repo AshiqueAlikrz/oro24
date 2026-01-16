@@ -87,8 +87,15 @@ const Navbar = () => {
 
           <div className="flex items-center justify-between pt-4 border-t border-gray-700">
             <div className="flex items-center space-x-2">
-              <img src="https://flagcdn.com/w20/gb.png" alt="UK Flag" className="w-5 h-3 rounded-sm" />
-              <span className="text-xs font-semibold">EN</span>
+              <ReactCountryFlag
+                countryCode="FR"
+                svg
+                style={{
+                  width: "2em",
+                  height: "2em",
+                }}
+                title="France"
+              />
             </div>
 
             <div className="relative">
