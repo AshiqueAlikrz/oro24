@@ -105,7 +105,7 @@ const Navbar = () => {
             {isAuthenticated && (
               <div className="flex items-center space-x-1" onClick={() => LogOut()}>
                 <User size={18} />
-                <span>Login</span>
+                <span>Logout</span>
               </div>
             )}
           </div>
