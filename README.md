@@ -36,7 +36,8 @@ A modern, performant, and secure web application built with React and Vite, feat
 
 2. **Authentication**  
    - Users log in using a secure token-based authentication system.  
-   - Private routes are accessible only after successful login.  
+   - Private routes are accessible only after successful login.
+   - Store the token in localStorage for global access, and also set it up in Redux to make it accessible throughout the application.
 
 3. **Service Navigation**  
    - Users can browse through categories of services.  
