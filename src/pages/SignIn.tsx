@@ -47,7 +47,7 @@ const SignIn = () => {
       </div>
 
       <div className="flex-1 flex items-center justify-center w-full px-4 sm:px-6 md:px-8 py-8">
-        <div className="bg-white/90 backdrop-blur-md p-5 sm:p-6 md:p-8 lg:p-10 rounded-lg shadow-lg w-full max-w-md">
+        <div className="bg-white/50 backdrop-blur-md p-5 sm:p-6 md:p-8 lg:p-10 rounded-lg shadow-lg w-full max-w-md">
           <h3 className="mb-4 sm:mb-6 text-center text-xl sm:text-2xl md:text-3xl font-medium">Sign In</h3>
           <form className="flex flex-col gap-3 sm:gap-4" onSubmit={formik.handleSubmit}>
             <Label htmlFor="email" className="text-sm sm:text-base">
