@@ -8,7 +8,6 @@ import { FallbackImage } from "@/assets/images";
 
 const ServiceTypeCard = ({ onSelect, data, totalPage, pageNumber, setPageNumber }: any) => {
   const [selectedId, setSelectedId] = useState(null);
-  const [page, setPage] = useState<number>(1);
 
   const handleSelect = (service: any) => {
     setSelectedId(service.ServiceID);
