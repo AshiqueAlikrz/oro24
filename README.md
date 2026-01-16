@@ -1,73 +1,60 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#ORO24FACILITIES
 
-Currently, two official plugins are available:
+A modern, performant, and secure web application built with React and Vite, featuring a clean UI, optimized performance, and robust state management.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🌟 Tech Stack
 
-## React Compiler
+- **Frontend:** React 18 + Vite  
+- **State Management & API Fetching:** Redux Toolkit + RTK Query  
+- **Routing:** React Router v7 with Public & Private routes  
+- **Authentication:** Secure token-based authentication  
+- **UI & Design:** Reusable components, Skeleton UI for loading states, Avenir Next - Cold font as per design, Added Toast for the alert as well.
+- **Performance Optimization:** Lazy loading, dynamic imports, optimized bundle size  
+- **Style:** Tailwind CSS  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Secure Authentication:** Only authenticated users can access private routes.  
+- **Public & Private Routes:** Proper route protection to prevent unauthorized access.  
+- **Lazy Loading & Dynamic Imports:** Components and pages load only when needed for faster performance.  
+- **Skeleton UI:** Smooth user experience during data fetching.  
+- **Reusable Components:** Modular, maintainable, and scalable codebase.  
+- **Global State Management:** RTK Query for fetching APIs and Redux Toolkit for managing state efficiently.  
+- **Responsive Layouts:** Layout system ensures consistency across pages and devices.  
+- **User Country Flag:** User show their country flag while login to the their account* .  
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🖥️ User Flow
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. **Landing Page / Home**  
+   - Users visit the public landing page.  
+   - Public routes display basic information and call-to-action buttons.  
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. **Authentication**  
+   - Users log in using a secure token-based authentication system.  
+   - Private routes are accessible only after successful login.
+   - Store the token in localStorage for global access, and also set it up in Redux to make it accessible throughout the application.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+3. **Service Navigation**  
+   - Users can browse through categories of services.  
+   - Clicking a service dynamically loads the service types (RTK Query fetching).  
+   - Skeletons indicate loading while fetching data.  
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+4. **Service Details**  
+   - Selecting a service type loads detailed information dynamically.  
+   - Users can view service duration, pricing, and other details.  
+
+5. **Pagination & Selection**  
+   - Users can navigate paginated data for services.  
+   - Selected items are highlighted with interactive UI feedback.  
+
+6. **Performance & UX Enhancements**  
+   - Lazy-loaded components reduce initial bundle size.  
+   - Skeleton UI ensures smooth visual feedback during API calls.  
+   - Reusable components improve consistency across the application.  
+
+
