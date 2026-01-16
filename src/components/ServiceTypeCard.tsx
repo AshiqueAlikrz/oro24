@@ -93,12 +93,14 @@ const ServiceTypeCard = ({ onSelect, data, totalPage, pageNumber, setPageNumber 
             </div>
           );
         })}
-      <Pagination>
+      <Pagination className="flex justify-end">
         <PaginationContent>
+          {/* Previous Button */}
           <PaginationItem>
-            <PaginationPrevious onClick={() => setPage((p) => Math.max(p - 1, 1))} className={page === 1 ? "pointer-events-none opacity-50" : ""} />
+            <PaginationPrevious onClick={() => setPageNumber((p: number) => Math.max(p - 1, 1))} className={pageNumber === 1 ? "pointer-events-none opacity-50" : ""} />
           </PaginationItem>
 
+          {/* Page Numbers */}
           {getPaginationRange({ current: pageNumber, total: totalPage }).map((item, index) =>
             item === "..." ? (
               <PaginationItem key={`dots-${index}`}>
@@ -107,9 +109,9 @@ const ServiceTypeCard = ({ onSelect, data, totalPage, pageNumber, setPageNumber 
             ) : (
               <PaginationItem key={item}>
                 <PaginationLink
-                  isActive={page === item}
+                  isActive={pageNumber === item}
                   onClick={() => setPageNumber(item)}
-                  className={`cursor-pointer ${pageNumber === item ? "bg-primary-yellow text-white hover:bg-primary-yellow" : ""}`}
+                  className={`cursor-pointer ${pageNumber === item ? "bg-primary-yellow text-white hover:border-primary-yellow" : ""}`}
                 >
                   {item}
                 </PaginationLink>
@@ -117,8 +119,9 @@ const ServiceTypeCard = ({ onSelect, data, totalPage, pageNumber, setPageNumber 
             )
           )}
 
+          {/* Next Button */}
           <PaginationItem>
-            <PaginationNext onClick={() => setPageNumber((p: number) => Math.min(p + 1, 10))} className={page === 10 ? "pointer-events-none opacity-50" : ""} />
+            <PaginationNext onClick={() => setPageNumber((p: number) => Math.min(p + 1, totalPage))} className={pageNumber === totalPage ? "pointer-events-none opacity-50" : ""} />
           </PaginationItem>
         </PaginationContent>
       </Pagination>
